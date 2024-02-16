@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Animal Details</title>
+ </head>
+<body>
+    <header>
+        <h1>
+        Animal Game By SowmyaPotu.
+       </h1>
+    </header>
+    <form id="AnimalForm">
+        <label for="secretAnimal">The hidden animal type:</label>
+        <input type="password" id="secreathiddenanimal" value="Chicken">
+        <br>
+        <label for="guessAnimal">Guess the animal:</label>
+        <input type="text" id="guessanimal">
+        <br>
+        <button type="button" onclick="checkAnimal()">Check the guess</button>
+    </form>
+    
+    <div id="result"></div>
+    <script>
+    
+        let correct = 0;
+        let wrong = 0;
+    
+        function checkAnimal() {
+            const secreathiddenanimal = document.getElementById('secreathiddenanimal');
+            const guessanimal = document.getElementById('guessanimal');
+            const result = document.getElementById('result');
+    
+            const secretAnimal = secreathiddenanimal.value.trim().toLowerCase();
+            const guessedAnimal = guessanimal.value.trim().toLowerCase();
+    
+            if (secretAnimal === guessedAnimal) {
+                correct++;
+                alert('Ruff ruff');
+            } else {
+                wrong++;
+                alert('Grrrr');
+            }
+    
+            result.innerHTML = `Correct counts: ${correct}, Wrong counts: ${wrong}`;
+        }
+    </script>
+    
+
+</body>
+</html> 
