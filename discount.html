@@ -12,21 +12,56 @@
 <label for="price">Enter price per:</label>
 <input type="number" id="price" value="10"><br><br>
 
-<label for="count">Enter the number of items:</label>
-<input type="number" id="count" value="9"><br><br>
+<label for="number">Enter the number of items:</label>
+<input type="number" id="number" value="9"><br><br>
 
-<label for="reductions">Enter the discount percent:</label>
-<input type="number" id="reductions" value="5"><br><br>
+<label for="discount">Enter the discount percent:</label>
+<input type="number" id="discount" value="5"><br><br>
 
 <button onclick="discount()">Show total</button>
 
 <p id="result"></p>
+<hr>
+<form>
+    <label><input type="radio" name="operation" value="sum" onclick="chooseOp()"> Sum</label><br>
+    <label><input type="radio" name="operation" value="mult" onclick="chooseOp()"> Mult</label><br>
+    <label><input type="radio" name="operation" value="exp" onclick="chooseOp()"> Exp</label><br>
+</form>
+<p id="resultop"></p>
+
+<script>
+    function chooseOp() {
+        const price = parseFloat(document.getElementById('price').value);
+        const discount = parseFloat(document.getElementById('discount').value);
+        const operation = document.querySelector('input[name="operation"]:checked').value;
+        let result;
+
+        switch (operation) {
+            case 'sum':
+                result = price + discount;
+                document.getElementById('resultop').innerHTML = `Sum of ${price} and ${discount} is ${result}`;
+                break;
+            case 'mult':
+                result = price * discount;
+                document.getElementById('resultop').innerHTML = `Product of ${price} and ${discount} is ${result}`;
+                break;
+            case 'exp':
+                result = Math.pow(price, discount);
+                document.getElementById('resultop').innerHTML = `${price} to the power of ${discount} is ${result}`;
+                break;
+            default:
+                document.getElementById('resultop').innerHTML = 'Please select an operation';
+                break;
+        }
+    }
+</script>
+
 
 <script>
     function discount() {
         const price = parseFloat(document.getElementById('price').value);
-        const count = parseInt(document.getElementById('count').value);
-        const reductions = parseFloat(document.getElementById('reductions').value);
+        const count = parseInt(document.getElementById('number').value);
+        const reductions = parseFloat(document.getElementById('discount').value);
         let toShow = "";
 
         
