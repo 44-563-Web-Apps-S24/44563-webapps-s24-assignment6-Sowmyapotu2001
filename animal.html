@@ -20,6 +20,35 @@
     </form>
     
     <div id="result"></div>
+    <div id="image">
+        <img src="pepsi" alt="Drink 1" id="dimage" onclick="selectImage()" style="width: 150px; height: 150px;">
+    </div>
+    
+    <script>
+       
+        let useImage = 1;
+    
+        
+        function selectImage() {
+           
+            switch (useImage) {
+                case 1:
+                    document.getElementById('dimage').src = 'sprit';
+                    useImage = 2;
+                    break;
+                case 2:
+                    document.getElementById('dimage').src = 'tango';
+                    useImage = 3;
+                    break;
+                case 3:
+                    document.getElementById('dimage').src = 'pepsi';
+                    useImage = 1;
+                    break;
+                default:
+                    break;
+            }
+        }
+    </script>
     <script>
     
         let correct = 0;
@@ -44,6 +73,7 @@
             result.innerHTML = `Correct counts: ${correct}, Wrong counts: ${wrong}`;
         }
     </script>
+    
     
 
 </body>
