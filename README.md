@@ -2,5 +2,6 @@
 # WebApps-S24-Assignment-6
 Introduction to Java Script and DOM
 
-Hosted At[Animal](https://github.com/44-563-Web-Apps-S24/44563-webapps-s24-assignment6-Sowmyapotu2001/animal.html),[discount](https://github.com/44-563-Web-Apps-S24/44563-webapps-s24-assignment6-Sowmyapotu2001/discount.html),
-[packing](https://github.com/44-563-Web-Apps-S24/44563-webapps-s24-assignment6-Sowmyapotu2001/packing.html)
+Hosted At["https://github.com/44-563-Web-Apps-S24/44563-webapps-s24-assignment6-Sowmyapotu2001/animal.html"](https://github.com/44-563-Web-Apps-S24/44563-webapps-s24-assignment6-Sowmyapotu2001/animal.html)
+Hosted At["https://github.com/44-563-Web-Apps-S24/44563-webapps-s24-assignment6-Sowmyapotu2001/discount.html"](https://github.com/44-563-Web-Apps-S24/44563-webapps-s24-assignment6-Sowmyapotu2001/discount.html)
+Hosted At["https://github.com/44-563-Web-Apps-S24/44563-webapps-s24-assignment6-Sowmyapotu2001/packing.html"](https://github.com/44-563-Web-Apps-S24/44563-webapps-s24-assignment6-Sowmyapotu2001/packing.html)
