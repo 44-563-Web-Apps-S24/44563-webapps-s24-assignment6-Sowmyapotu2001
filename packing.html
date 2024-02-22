@@ -20,17 +20,17 @@
     <form>
 
         <label for="packLight">Pack light</label>
-        <input type="checkbox" id="packLight" name="packLight" value="True" checked>
+        <input type="checkbox"  id="packLight" name="packLight" value="True" checked>
         <br>
         <label for="carryOn">Carry on</label>
-        <input type="checkbox" id="carryOn" name="carryOn" value="True" checked>
+        <input type="checkbox"  id="carryOn" name="carryOn" value="True" checked>
         <br>
         <label for="tablet">Tablet</label>
         <input type="checkbox" id="tablet" name="tablet" value="False" >
 
     </form>
 
-    <button onclick="selectPack()">Select for packing</button>
+    <button class="btn btn-primary"onclick="selectPack()">Select for packing</button>
 
 
     <div id="pResult"></div>
@@ -48,13 +48,13 @@
     </script>
     <form>
         <label for="travelMonth">Enter travel month</label>
-        <input type="text" id="travelMonth" name="travelMonth" value="May"><br>
+        <input type="text" class="form-control"id="travelMonth" name="travelMonth" value="May"><br>
         <label for="price">Enter price</label>
-        <input type="text" id="price" name="price"><br>
+        <input type="text" class="form-control"id="price" name="price"><br>
         
     </form>
-    <button type="button" onclick="updatePack()">Update the pack</button>
-    <div id="pResult1"></div>
+    <button type="button" class="btn btn-primary"onclick="updatePack()">Update the pack</button>
+    
 
     
     <script>
@@ -64,7 +64,7 @@
 -          console.log(travelMonth+" "+price);
             my_pack["travelMonth"] = travelMonth;
             my_pack["price"] = price;
-            document.getElementById('pResult1').innerHTML = JSON.stringify(my_pack);
+            document.getElementById('pResult').innerHTML = JSON.stringify(my_pack);
         }
     </script>
 

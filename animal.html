@@ -17,17 +17,17 @@
             Animal game by SowmyaPotu.
         </h1>
     </header>
-    <form>
+    <form id="animalfrom">
         <label for="secretAnimal">The hidden animal type:</label>
-        <input type="password" id="secretanimal" value="Chicken">
+        <input type="password" class="form-control" id="secretanimal" value="Chicken"><br>
         <br>
         <label for="guessAnimal">Guess the animal:</label>
-        <input type="text" id="guessanimal">
+        <input type="text" class="form-control" id="guessanimal">
         <br>
-        <button type="button"  id="checkanimal" onclick="checkAnimal()">Check the guess</button>
+        <button type="button"  class="btn btn-primary" onclick="checkAnimal()">Check the guess</button>
     </form>
 
-    <div id="result"></div>
+    <p class="mt-3" id="result"></p>
     <div id="image">
         <img src="pepsi" alt="Drink 1" id="dimage" onclick="selectImage()" style="width: 150px; height: 150px;">
     </div>
